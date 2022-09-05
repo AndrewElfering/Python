@@ -1,0 +1,16 @@
+#Determining if a year is a "Leap year" or "Common year"
+year = int(input("Enter a year: "))
+
+output = "Leap year"
+
+if year < 1582:
+    output = "Not within the Gregorian calendar period."
+elif year%4 != 0:
+    output = "common Year"
+elif year%100 != 0:
+    output = "leap year"
+elif year%400 != 0:
+    output = "common year"
+    
+
+print(output)
