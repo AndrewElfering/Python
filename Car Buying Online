@@ -1,0 +1,26 @@
+print("Hello, Welcome to Carz-4-Less")
+car = input("What car would you like to buy? ")
+print("How much would you like to pay for the",car,"?")
+car_price = int(input("Enter dollar ammount: "))
+
+sleaze_tax = car_price * .05
+restocking_fee = car_price * .12
+adm = 1000
+processing = 100
+destination = 495
+undercoating = 295
+rust_proofing = 395
+prep = 250
+total_cost = car_price + sleaze_tax + restocking_fee + adm + processing + destination + undercoating + rust_proofing + prep
+
+print(car)
+print("Base Price: $",car_price)
+print("Additional Dealer Markup: $",adm)
+print("Processing Fee: $",processing)
+print("Destination Charge: $",destination)
+print("Undercoating: $",undercoating)
+print("Rust-Proofing: $",rust_proofing)
+print("Prep Fee $",prep)
+print("Sleaze Tax(5%): $",sleaze_tax)
+print("Restocking Fee(12%): $",restocking_fee)
+print("Total Cost: $",total_cost)
